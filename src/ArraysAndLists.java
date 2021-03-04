@@ -9,7 +9,7 @@ public class ArraysAndLists {
         array[0] = 34;
         array[1] = 92;
         int total = 0;
-        int arrayTwo[] = {2,5,1,6,7};
+        int arrayTwo[] = {2,5,1,6,7,8};
 
         for (int x = 0; x < array.length; x += 1) {
             System.out.println(array[x]);
@@ -36,19 +36,25 @@ public class ArraysAndLists {
         //
         String names[] = new String[10];
         String moreNames[] = {"Herb", "Jack", "Sue", "Fred"};
+
         // names = {"Tim"} cannot do that
-            names = new String[3];
+           // names = new String[3];
     }
 public static void printIt(int[] list) {
         for (int x = 0; x < list.length; x +=1) {
+           // System.out.print(list[x] + " ");
+
+            list[x] = list[list.length - 1 - x];
             System.out.print(list[x] + " ");
 
         }
     System.out.println();
 }
 public static String[] makeIt() {
+
         String[] names = {"Bob", "Kyle",  "Joe", "Susie"};
         return names;
+
 }
 
 }
